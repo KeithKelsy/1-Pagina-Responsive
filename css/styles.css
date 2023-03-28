@@ -1,18 +1,40 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #00abfb;
+    --secundario: #ffc107;
+    --gris: #757575;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
 html {
     font-size: 62.5%;
 }
-
 body {
+    
     font-size: 16px;
 }
 .titulo {
     text-align: center;
-    font-size: 3.8rem;
 }
 .titulo span {
     font-size: 2rem;
 }
 
-span {
+.container {
+    width: 120rem;
+    margin: 0 auto;
+}
 
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.nav-principal a {
+    background-color: var(--primario);
+}
+
+p {
+    background-color: var(--primario);
 }

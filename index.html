@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Freelancer</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">   
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <heade>
+    <header>
         <h1 class="titulo">Keith Kelsy <span> Freelancer</span></h1>
     </header>
     
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre Mi</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bg">
+        <nav class="nav-principal container">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
 
     <section>
         <h2 class="titulo">Diseño y Desarrollo Web Freelancer</h2>
@@ -114,9 +121,33 @@
         <h2>Contacto</h2>
         <form action="#" method="POST">
             <fieldset>
-                <legend>Contactame llenando todos los formularios</legend>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingresa aquí tu nombre" required>
+                <legend>Contáctame llenando todos los campos!</legend>
+                
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa aquí tu nombre" required/>
+                </div>
+
+                <div>
+                    <label for="nombre">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Ingresa aquí telefono" required/>
+                </div>
+
+                <div>
+                    <label for="nombre">Correo</label>
+                    <input type="email" name="email" id="email" placeholder="Ingresa aquí tu email" required/>
+                </div>
+                
+                <div>
+                    <label for="nombre">Mensaje</label>
+                    <textarea name="comment" id="comment" placeholder="Ingresa aquí tu comentario"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar"/>
+
+                </div>
+
             </fieldset>
         </form>
     </section>
