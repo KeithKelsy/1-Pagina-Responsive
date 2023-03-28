@@ -1,4 +1,4 @@
-# Freelancer-page
+# Freelancer page
 
 ### Primer proyecto de la ruta de Web development, página de portfolio con HTML, y CSS Nativos.
 
