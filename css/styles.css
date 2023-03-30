@@ -14,7 +14,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box; /* Hack para Box Model*/
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 *, *:before, *:after {
@@ -59,14 +59,17 @@ body {
     margin: 0 auto;
 }
 
-.servicios,
+
 .nav-principal,
 .formulario {
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    text-align: center;
 }
 
+.titulo-servicios {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
 /** Servicios **/
 
 @media (min-width: 768px) {
